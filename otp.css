@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); ubuntu
+
+body {
+    font-family: "ubuntu",sans-serif;
+    background-color: #fffdfd50;
+  }
+
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+    /* Add a subtle shadow to the heading */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+      typing 4s infinite forwards;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px;
+    margin: 40px auto;
+    box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+    /* Add a subtle animation to the card */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 30px 70px rgb(8, 202, 209);
+  }
+  
+  button {
+    background-color: #5e4caf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add a subtle animation to the button */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #818881;
+    /* Add a subtle shadow to the button on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #otp-notification {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 30px;
+    /* Add a subtle animation to the notification */
+    animation: fade-in 1s ease-in-out infinite;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #received-otp {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 7px 7px 15px -1px rgba(207, 60, 207, 0.67);
+    -moz-box-shadow: 7px 7px 15px -1px rgba(207, 60, 207, 0.67);
+    box-shadow: 7px 7px 15px -1px rgba(207, 60, 207, 0.67);
+    /* Add a subtle animation to the input field */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #received-otp:focus {
+    box-shadow: 10px -1px 30px rgba(207, 60, 207, 0.9);
+  }
+  
+  #verification-result {
+    font-size: 24px;
+    color: #33ff00;
+    margin-top: 20px;
+  }
+  
+  /* media query  */
+  @media only screen and (max-width: 412px) {
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 80px auto;
+    }
+    #received-otp {
+        width: 80%;
+    }
+    button {
+        padding: 10px 15px;
+    }
+    #otp-notification {
+        font-size: 20px;
+    }
+    #verification-result {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 28px; 
+    }
+}

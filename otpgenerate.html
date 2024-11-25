@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="otp.css">
+    <link rel="shortcut icon" href="padlock.png" type="image/x-icon">
+    <title>4 DIGIT OTP GENERATOR</title>
+</head>
+<body>
+    <div class="card">
+    <h1>4 DIGIT OTP GENERATOR</h1>
+    <br>
+    <button onclick="generateOTP()">Generate OTP</button>
+    <br>
+    <h3 id="otp-notification">OTP : </h3>
+    <input type="text" id="received-otp" required placeholder="Enter received OTP" >
+    <button id="submit-btn"  onclick="verifyOTP()" >Submit</button>
+    <div id="verification-result" ></div>
+    <br>
+    <!-- password -->
+<button onclick="generatePassword()">Generate Password</button>
+<h3 id="password-notification">Generated Password: </h3>
+</div>
+
+<script src="otp.js"></script>
+</body>
+</html>
